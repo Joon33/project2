@@ -1,0 +1,191 @@
+@charset "utf-8";
+
+@import url(reset.css);
+
+body{ color: #333; }
+h1, h2, h3{ color: #333; }
+
+/* ******************* 레이아웃 구성시작 **************** */
+#wrap{
+  width: 1170px;
+  height: auto;
+  margin: auto;
+  padding-top: 72px;
+}
+#header{
+  height: 48px;
+  margin-bottom: 72px;
+}
+#mainview{
+  height: 480px;
+  margin-bottom: 72px;
+}
+#contents{
+  height: auto;
+  position: relative;
+  padding: 24px 0 72px 200px;
+}
+
+
+
+/* ******************* 개별영역 구성시작 **************** */
+
+/* ************ header Area Start ********* */
+/* Logo */
+#header h1{
+  width: 48px;
+  height: 48px;
+  background-image: url(../images/Logo.png);
+  margin-right: 53px;
+  float: left;
+}
+
+/* Gnb */
+#header .gnb{  
+  width: 470px;
+  height: 48px;
+  float: left;
+}
+#header .gnb li{
+  height: 100%;
+  float: left;
+  margin-right: 25px;
+}
+#header .gnb li a{
+  display: block;
+  height: 100%;
+  font: 400 1.4rem/48px 'Roboto', sans-serif;
+}
+#header .gnb li a:hover{ color: #c30; }
+
+
+
+/* Member */
+#header .member{
+  float: right;
+  width: 170px;
+  height: 48px;
+  font: 400 1.4rem/48px 'Roboto', sans-serif;
+}
+#header .member a:hover{ color: #fe7303 }
+#header .member span{ margin-left: 37px; font-weight: bold; }
+
+
+/* ************ mainview Area Start ********* */
+#mainview img{ width: 100%; height: 100%; }
+
+
+/* ************ contents Area Start ********* */
+
+/* ******* author Area Start ****** */
+#contents .author{
+  width: 70px;
+  height: 200px;
+  position: absolute; left: 0; top: 0;
+}
+#contents .author span{
+  display: inline-block;
+  width: 110px; height: 15px;
+  font: 400 1.4rem/15px 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  color: #707070;
+  position: absolute; left: -20px; top: 67%;
+  
+  -webkit-transform:rotate(-90deg);
+  -moz-transform:rotate(-90deg);
+  -o-transform:rotate(-90deg);
+  transform:rotate(-90deg);
+}
+#contents .author span strong{ color: #333; }
+#contents .author img{ width: 70px; height: 70px; }
+
+/* ******* post-date Area Start ****** */
+#contents .post-date{ 
+  height: 24px;
+  margin-bottom: 48px;
+ }
+ #contents .post-date>div{ 
+   width: 170px; 
+   height: 24px;
+   font: 500 1.5rem/24px 'Roboto', sans-serif;
+   }
+#contents .post-date .date{ float: left; }
+#contents .post-date .title{ float: right; text-align: right; color: #FE7303; }
+
+
+/* ******* content Area Start ****** */
+#contents .content{  height: auto; margin-bottom: 72px;  }
+#contents .content h2{
+  height: 48px;
+  color: #FE7303;
+  font: 300 6rem/48px 'Roboto', sans-serif;
+  margin-bottom: 48px;
+  position: relative; left: -5px;
+}
+
+#contents .content h2+p{ margin-bottom: 24px; line-height: 30px; }
+#contents .content h2+p span{
+  display:inline-block;
+  width: 37px;
+  height: 60px;
+  float: left;
+  font: 400 6rem/48px 'Roboto', sans-serif;
+  color:#FE7303;
+  margin-right: 35px;
+  position: relative; left: -3px; top: 9px;
+  
+}
+#contents .content h2+p+p{ margin-bottom: 96px; line-height: 30px; }  
+/* p+p도 됌 */
+
+#contents .content .photo-box{ height: auto; }
+#contents .content .photo-box .box::after{
+  content:''; display: block; clear: both;
+}
+
+#contents .content .photo-box .box>div{
+  width: 470px;
+  height: 480px;
+  padding: 144px 0 0 100px;
+  float: left
+}
+#contents .content .photo-box .box>div h3{
+  font: 500 1.7rem/1.5 'Roboto', sans-serif;
+}
+#contents .content .photo-box .box> img{ float: right; }
+
+#contents .content .photo-box .box:first-child>div{ float: right; }
+#contents .content .photo-box .box:first-child>img{ float: left; }
+
+#contents .content .photo-box .box:last-child>img{ 
+  position:relative; top: -120px; }
+
+  #contents .content>p:last-of-type{
+    height: 48px;
+    font: 400 1.7rem/1.5 'Roboto', sans-serif;
+    
+  }
+  
+  
+  /* ******* footer Area Start ****** */
+  #contents .footer h3{
+    height: 24px;
+    font: 700 1.8rem/1.5 'Roboto', sans-serif;
+    margin-bottom: 24px;
+}
+#contents .footer .sns-group{ height: 72px; }
+#contents .footer .sns-group a{
+  display: inline-block;
+  width: 72px;
+  height: 72px;
+  font: 500 1.8rem/72px 'Roboto', sans-serif;
+  text-align: center;
+  border: 1px solid #333;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+#contents .footer .sns-group a:hover{ background-color: #e2e2e2; }
+
+
+
+
